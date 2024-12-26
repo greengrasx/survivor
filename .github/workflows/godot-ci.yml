@@ -29,7 +29,7 @@ jobs:
         run: |
           mkdir -v -p build/windows
           export_dir="$(readlink -f build)"
-          godot --headless --verbose --export-pack "Windows Desktop" "$export_dir/windows/$export_dir.pck"
+          godot --headless --verbose --export-pack "Windows Desktop" "$export_dir/windows/$export_name.pck"
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
