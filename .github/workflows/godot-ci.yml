@@ -91,3 +91,4 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: survivor.pck
           asset_name: survivor.pck
+          asset_content_type: application/octet-stream
