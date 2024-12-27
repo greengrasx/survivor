@@ -78,6 +78,9 @@ jobs:
             Release notes for ${{env.GitVersion_MajorMinorPatch}}
           draft: false
           prerelease: true
+      - name: Check artifact
+        run: |
+          ls -la /home/runner/work/survivor/survivor
 
       - name: Upload Windows Release Asset
         id: upload-windows-release-asset
